@@ -1,24 +1,5 @@
-# README
+# Chat translate assignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is for Mix & Go School Level 8 assignment
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Everything works except some times the error message when login does not translate to the 2nd language. 
