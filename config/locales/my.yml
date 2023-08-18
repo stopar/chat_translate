@@ -1,0 +1,45 @@
+my:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email: 
+              blank: "tidak boleh kosong"
+            password:
+              blank: "tidak boleh kosong"
+    attributes:
+      user:
+        email: "Emel"
+        password: "Kata laluan"
+        remember_me: "Ingat saya untuk sesi ini"
+        password_confirmation: "Ulangi kata laluan"
+  layouts:
+    application:
+      login: "Masuk"
+      logout: "Keluar"
+  site:
+    index:
+      ask_to_login: "Sila daftar masuk untuk mulakan chat"
+      submit: "Hantar"
+  devise:
+    registrations:
+      new:
+        sign_up_header: "Daftar pengguna baru"
+        password_characters: "huruf minima"
+        sign_up_button: "Daftar pengguna"
+    sessions:
+      new:
+        login_page_header: "Daftar Masuk"
+        login_button: "Masuk"
+    passwords:
+      new:
+        forgot_password_header: "Terlupa kata lalauan anda?"
+        password_reset_info: "Hantar kata laluan baru"
+    shared:
+      links:
+        forgot_password_link: "Lupa kata laluan?"
+        signup_link: "Daftar pengguna"
+        login_button: "Masuk disini"
+      form_footer:
+        footer_text: "©%{year} Acme Corp. Hak milik terpelihara."

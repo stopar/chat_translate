@@ -1,5 +1,5 @@
 <div class="mx-auto max-w-xs">
-    <h1 class="font-hairline mb-6 text-center">Log In</h1>
+    <h1 class="font-hairline mb-6 text-center"><%= t(".login_page_header") %></h1>
 
     <%= form_for(resource,
                  as: resource_name,
@@ -8,12 +8,11 @@
                          class: "bg-white mb-4 px-8 pt-6 pb-8 rounded shadow-md"
                  }
         ) do |f| %>
-
-        <%= devise_simple_error_messages! %>
-
+		
+        <%= devise_simple_error_messages! %>	
+		
         <% if flash.present? %>
             <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4" role="alert">
-                <p class="font-bold">Oops!</p>
                 <%- flash.each do |name, msg| -%>
                     <%= content_tag :p,
                                     msg.humanize,
@@ -21,7 +20,7 @@
                 <%- end -%>
             </div>
         <% end %>
-
+		
         <div class="mb-4">
             <%= f.label :email, class: "block text-gray-700 text-sm font-bold mb-2" %>
             <%= f.email_field :email, autofocus: true, autocomplete: "email",
@@ -47,7 +46,7 @@
         <% end %>
 
         <div class="mb-4">
-            <%= f.submit "Log in",
+            <%= f.submit t(".login_button"),
                          class: "button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
             %>
         </div>

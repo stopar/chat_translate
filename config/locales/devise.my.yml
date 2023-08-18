@@ -1,0 +1,19 @@
+my:
+  devise:
+    failure:
+      invalid: 'Emel dan kata laluan anda salah'
+    sessions:
+      signed_in: 'Proses daftar masuk berjaya.'
+      signed_out: 'Proses daftar keluar berjaya.'
+    passwords:
+      send_instructions: 'Anda akan menerima emel mengenai langkah mengubah kata laluan sebentar lagi.'
+      updated: 'Password anda telah berjaya diubah. Anda telah didaftar masuk.'
+    registrations:
+      signed_up: 'Proses pendaftaran berjaya. Link untuk mengaktifkan akaun telah dihantar di emel.'
+      updated: 'Akaun anda telah dikemaskini'
+      destroyed: 'Selamat Tinggal, akaun anda telah di tutup'
+  errors:
+    messages:
+      not_saved:
+        one: "1 halangan untuk %{resource} untuk diteruskan:"
+        other: "%{count} halangan untuk %{resource} untuk diteruskan:"

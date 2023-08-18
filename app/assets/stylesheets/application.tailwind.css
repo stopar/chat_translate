@@ -17,7 +17,7 @@
 }
 
 .alert {
-  @apply bg-purple-100 rounded-lg py-5 px-6 mb-4 text-sm text-purple-700;
+  @apply bg-red-100 rounded-lg py-5 px-6 mb-4 text-sm text-red-700;
 }
 
 .chat {

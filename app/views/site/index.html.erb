@@ -1,8 +1,19 @@
+<% if signed_in? %>
+
 <div class="chat" data-controller="chat">
   <div class="chat-messages" data-chat-target="messages"></div>
 
   <div class="chat-actionbar">
     <input type="text" class="chat-input" data-chat-target="input" />
-    <input type="submit" class="button" data-action="click->chat#submit" />
+    <input value="<%= translate(".submit") %>" type="submit" class="button" data-action="click->chat#submit" />
   </div>
 </div>
+
+<% else %>
+	
+	<div class="flex justify-center mt-24 p-6 border-2 border-amber-500 bg-orange-200 rounded-md">
+		<div>
+			<p class="text-xl"><%= t(".ask_to_login")%></p>
+		</div>
+	</div>
+<% end %>

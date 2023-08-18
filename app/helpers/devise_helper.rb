@@ -3,6 +3,9 @@
 # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
 # devise helper
 module DeviseHelper
+  
+  require 'pry'
+  
   def devise_error_messages!
     return if resource.errors.empty?
 
@@ -16,7 +19,6 @@ module DeviseHelper
 
     html = <<-HTML
       <div class="bg-red-100 border-l-4 border-red-500 mb-4 p-4 text-red-700" role="alert">
-          <p class="font-bold">Oops!</p>
           <p>#{sentence}</p>#{messages}
       </div>
     HTML
@@ -25,6 +27,7 @@ module DeviseHelper
   end
 
   def devise_simple_error_messages!
+    # binding.pry
     return if resource.errors.empty?
 
     sentence = "Ooops!"
