@@ -11,9 +11,9 @@ en:
         user:
           attributes:
             email: 
-              blank: "Email cannot be empty"
+              blank: "cannot be empty"
             password:
-              blank: "Password cannot be empty"
+              blank: "cannot be empty"
   layouts:
     application:
       login: "Login"
