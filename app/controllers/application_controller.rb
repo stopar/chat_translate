@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
-  # The code below will work normally for basic Rails
+  # The code below will work fine for managing locales across different request in Rails
   # However for Devise this will not work due to a bug in Warden
   # For more see: https://github.com/tigrish/devise-i18n
-  #
+  # 
   # around_action :switch_locale
   #
   # def switch_locale(&action)
